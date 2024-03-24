@@ -1,1698 +1,1701 @@
 
+PRAGMA foreign_keys = ON;
+
 CREATE TABLE nj_municipalities (
     municipality_code INTEGER PRIMARY KEY,
-    county_name TEXT,
-    municipality_name TEXT
+    municipality_name TEXT,
+    county_code INTEGER,
+    FOREIGN KEY(county_code) REFERENCES nj_counties(county_code)
 );
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0101, "Atlantic County", "Absecon");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0101, 1, "Absecon");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0102, "Atlantic County", "Atlantic City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0102, 1, "Atlantic City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0103, "Atlantic County", "Brigantine");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0103, 1, "Brigantine");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0104, "Atlantic County", "Buena Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0104, 1, "Buena Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0105, "Atlantic County", "Buena Vista Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0105, 1, "Buena Vista Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0106, "Atlantic County", "Corbin City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0106, 1, "Corbin City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0107, "Atlantic County", "Egg Harbor City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0107, 1, "Egg Harbor City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0108, "Atlantic County", "Egg Harbor Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0108, 1, "Egg Harbor Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0109, "Atlantic County", "Estell Manor");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0109, 1, "Estell Manor");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0110, "Atlantic County", "Folsom Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0110, 1, "Folsom Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0111, "Atlantic County", "Galloway Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0111, 1, "Galloway Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0112, "Atlantic County", "Hamilton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0112, 1, "Hamilton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0113, "Atlantic County", "Hammonton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0113, 1, "Hammonton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0114, "Atlantic County", "Linwood");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0114, 1, "Linwood");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0115, "Atlantic County", "Longport Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0115, 1, "Longport Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0116, "Atlantic County", "Margate City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0116, 1, "Margate City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0117, "Atlantic County", "Mullica Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0117, 1, "Mullica Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0118, "Atlantic County", "Northfield");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0118, 1, "Northfield");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0119, "Atlantic County", "Pleasantville");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0119, 1, "Pleasantville");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0120, "Atlantic County", "Port Republic");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0120, 1, "Port Republic");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0121, "Atlantic County", "Somers Point");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0121, 1, "Somers Point");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0122, "Atlantic County", "Ventnor City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0122, 1, "Ventnor City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0123, "Atlantic County", "Weymouth Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0123, 1, "Weymouth Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0201, "Bergen County", "Allendale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0201, 2, "Allendale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0202, "Bergen County", "Alpine Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0202, 2, "Alpine Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0203, "Bergen County", "Bergenfield Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0203, 2, "Bergenfield Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0204, "Bergen County", "Bogota Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0204, 2, "Bogota Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0205, "Bergen County", "Carlstadt Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0205, 2, "Carlstadt Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0206, "Bergen County", "Cliffside Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0206, 2, "Cliffside Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0207, "Bergen County", "Closter Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0207, 2, "Closter Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0208, "Bergen County", "Cresskill Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0208, 2, "Cresskill Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0209, "Bergen County", "Demarest Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0209, 2, "Demarest Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0210, "Bergen County", "Dumont Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0210, 2, "Dumont Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0212, "Bergen County", "East Rutherford Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0212, 2, "East Rutherford Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0213, "Bergen County", "Edgewater Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0213, 2, "Edgewater Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0211, "Bergen County", "Elmwood Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0211, 2, "Elmwood Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0214, "Bergen County", "Emerson Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0214, 2, "Emerson Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0215, "Bergen County", "Englewood");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0215, 2, "Englewood");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0216, "Bergen County", "Englewood Cliffs Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0216, 2, "Englewood Cliffs Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0217, "Bergen County", "Fair Lawn Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0217, 2, "Fair Lawn Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0218, "Bergen County", "Fairview Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0218, 2, "Fairview Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0219, "Bergen County", "Fort Lee Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0219, 2, "Fort Lee Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0220, "Bergen County", "Franklin Lakes Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0220, 2, "Franklin Lakes Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0221, "Bergen County", "Garfield");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0221, 2, "Garfield");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0222, "Bergen County", "Glen Rock Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0222, 2, "Glen Rock Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0223, "Bergen County", "Hackensack");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0223, 2, "Hackensack");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0224, "Bergen County", "Harrington Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0224, 2, "Harrington Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0225, "Bergen County", "Hasbrouck Heights Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0225, 2, "Hasbrouck Heights Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0226, "Bergen County", "Haworth Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0226, 2, "Haworth Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0227, "Bergen County", "Hillsdale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0227, 2, "Hillsdale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0228, "Bergen County", "Ho-Ho-Kus Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0228, 2, "Ho-Ho-Kus Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0229, "Bergen County", "Leonia Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0229, 2, "Leonia Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0230, "Bergen County", "Little Ferry Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0230, 2, "Little Ferry Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0231, "Bergen County", "Lodi Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0231, 2, "Lodi Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0232, "Bergen County", "Lyndhurst Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0232, 2, "Lyndhurst Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0233, "Bergen County", "Mahwah Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0233, 2, "Mahwah Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0234, "Bergen County", "Maywood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0234, 2, "Maywood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0235, "Bergen County", "Midland Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0235, 2, "Midland Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0236, "Bergen County", "Montvale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0236, 2, "Montvale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0237, "Bergen County", "Moonachie Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0237, 2, "Moonachie Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0238, "Bergen County", "New Milford Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0238, 2, "New Milford Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0239, "Bergen County", "North Arlington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0239, 2, "North Arlington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0240, "Bergen County", "Northvale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0240, 2, "Northvale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0241, "Bergen County", "Norwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0241, 2, "Norwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0242, "Bergen County", "Oakland Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0242, 2, "Oakland Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0243, "Bergen County", "Old Tappan Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0243, 2, "Old Tappan Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0244, "Bergen County", "Oradell Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0244, 2, "Oradell Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0245, "Bergen County", "Palisades Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0245, 2, "Palisades Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0246, "Bergen County", "Paramus Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0246, 2, "Paramus Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0247, "Bergen County", "Park Ridge Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0247, 2, "Park Ridge Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0248, "Bergen County", "Ramsey Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0248, 2, "Ramsey Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0249, "Bergen County", "Ridgefield Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0249, 2, "Ridgefield Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0250, "Bergen County", "Ridgefield Park Village");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0250, 2, "Ridgefield Park Village");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0251, "Bergen County", "Ridgewood Village");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0251, 2, "Ridgewood Village");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0252, "Bergen County", "River Edge Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0252, 2, "River Edge Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0253, "Bergen County", "River Vale Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0253, 2, "River Vale Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0254, "Bergen County", "Rochelle Park Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0254, 2, "Rochelle Park Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0255, "Bergen County", "Rockleigh Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0255, 2, "Rockleigh Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0256, "Bergen County", "Rutherford Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0256, 2, "Rutherford Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0257, "Bergen County", "Saddle Brook Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0257, 2, "Saddle Brook Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0258, "Bergen County", "Saddle River Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0258, 2, "Saddle River Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0259, "Bergen County", "South Hackensack Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0259, 2, "South Hackensack Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0260, "Bergen County", "Teaneck Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0260, 2, "Teaneck Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0261, "Bergen County", "Tenafly Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0261, 2, "Tenafly Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0262, "Bergen County", "Teterboro Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0262, 2, "Teterboro Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0263, "Bergen County", "Upper Saddle River Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0263, 2, "Upper Saddle River Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0264, "Bergen County", "Waldwick Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0264, 2, "Waldwick Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0265, "Bergen County", "Wallington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0265, 2, "Wallington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0266, "Bergen County", "Washington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0266, 2, "Washington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0267, "Bergen County", "Westwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0267, 2, "Westwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0268, "Bergen County", "Woodcliff Lake Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0268, 2, "Woodcliff Lake Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0269, "Bergen County", "Wood-Ridge Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0269, 2, "Wood-Ridge Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0270, "Bergen County", "Wyckoff Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0270, 2, "Wyckoff Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0301, "Burlington County", "Bass River Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0301, 3, "Bass River Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0302, "Burlington County", "Beverly");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0302, 3, "Beverly");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0303, "Burlington County", "Bordentown");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0303, 3, "Bordentown");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0304, "Burlington County", "Bordentown Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0304, 3, "Bordentown Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0305, "Burlington County", "Burlington");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0305, 3, "Burlington");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0306, "Burlington County", "Burlington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0306, 3, "Burlington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0307, "Burlington County", "Chesterfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0307, 3, "Chesterfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0308, "Burlington County", "Cinnaminson Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0308, 3, "Cinnaminson Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0309, "Burlington County", "Delanco Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0309, 3, "Delanco Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0310, "Burlington County", "Delran Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0310, 3, "Delran Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0311, "Burlington County", "Eastampton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0311, 3, "Eastampton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0312, "Burlington County", "Edgewater Park Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0312, 3, "Edgewater Park Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0313, "Burlington County", "Evesham Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0313, 3, "Evesham Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0314, "Burlington County", "Fieldsboro Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0314, 3, "Fieldsboro Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0315, "Burlington County", "Florence Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0315, 3, "Florence Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0316, "Burlington County", "Hainesport Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0316, 3, "Hainesport Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0317, "Burlington County", "Lumberton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0317, 3, "Lumberton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0318, "Burlington County", "Mansfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0318, 3, "Mansfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0319, "Burlington County", "Maple Shade Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0319, 3, "Maple Shade Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0321, "Burlington County", "Medford Lakes Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0321, 3, "Medford Lakes Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0320, "Burlington County", "Medford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0320, 3, "Medford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0322, "Burlington County", "Moorestown Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0322, 3, "Moorestown Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0323, "Burlington County", "Mount Holly Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0323, 3, "Mount Holly Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0324, "Burlington County", "Mount Laurel Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0324, 3, "Mount Laurel Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0325, "Burlington County", "New Hanover Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0325, 3, "New Hanover Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0326, "Burlington County", "North Hanover Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0326, 3, "North Hanover Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0327, "Burlington County", "Palmyra Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0327, 3, "Palmyra Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0328, "Burlington County", "Pemberton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0328, 3, "Pemberton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0329, "Burlington County", "Pemberton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0329, 3, "Pemberton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0330, "Burlington County", "Riverside Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0330, 3, "Riverside Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0331, "Burlington County", "Riverton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0331, 3, "Riverton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0332, "Burlington County", "Shamong Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0332, 3, "Shamong Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0333, "Burlington County", "Southampton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0333, 3, "Southampton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0334, "Burlington County", "Springfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0334, 3, "Springfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0335, "Burlington County", "Tabernacle Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0335, 3, "Tabernacle Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0336, "Burlington County", "Washington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0336, 3, "Washington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0337, "Burlington County", "Westampton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0337, 3, "Westampton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0338, "Burlington County", "Willingboro Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0338, 3, "Willingboro Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0339, "Burlington County", "Woodland Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0339, 3, "Woodland Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0340, "Burlington County", "Wrightstown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0340, 3, "Wrightstown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0401, "Camden County", "Audubon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0401, 4, "Audubon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1907, "Sussex County", "Fredon Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1907, 19, "Fredon Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0402, "Camden County", "Audubon Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0402, 4, "Audubon Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0403, "Camden County", "Barrington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0403, 4, "Barrington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0404, "Camden County", "Bellmawr Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0404, 4, "Bellmawr Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0405, "Camden County", "Berlin Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0405, 4, "Berlin Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0406, "Camden County", "Berlin Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0406, 4, "Berlin Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0407, "Camden County", "Brooklawn Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0407, 4, "Brooklawn Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0408, "Camden County", "Camden");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0408, 4, "Camden");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0409, "Camden County", "Cherry Hill Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0409, 4, "Cherry Hill Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0410, "Camden County", "Chesilhurst Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0410, 4, "Chesilhurst Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0411, "Camden County", "Clementon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0411, 4, "Clementon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0412, "Camden County", "Collingswood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0412, 4, "Collingswood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0413, "Camden County", "Gibbsboro Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0413, 4, "Gibbsboro Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0414, "Camden County", "Gloucester City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0414, 4, "Gloucester City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0415, "Camden County", "Gloucester Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0415, 4, "Gloucester Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0418, "Camden County", "Haddon Heights Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0418, 4, "Haddon Heights Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0416, "Camden County", "Haddon Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0416, 4, "Haddon Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0417, "Camden County", "Haddonfield Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0417, 4, "Haddonfield Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0419, "Camden County", "Hi-Nella Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0419, 4, "Hi-Nella Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0420, "Camden County", "Laurel Springs Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0420, 4, "Laurel Springs Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0421, "Camden County", "Lawnside Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0421, 4, "Lawnside Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0422, "Camden County", "Lindenwold Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0422, 4, "Lindenwold Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0423, "Camden County", "Magnolia Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0423, 4, "Magnolia Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0424, "Camden County", "Merchantville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0424, 4, "Merchantville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0425, "Camden County", "Mount Ephraim Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0425, 4, "Mount Ephraim Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0426, "Camden County", "Oaklyn Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0426, 4, "Oaklyn Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0427, "Camden County", "Pennsauken Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0427, 4, "Pennsauken Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0428, "Camden County", "Pine Hill Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0428, 4, "Pine Hill Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0430, "Camden County", "Runnemede Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0430, 4, "Runnemede Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0431, "Camden County", "Somerdale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0431, 4, "Somerdale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0432, "Camden County", "Stratford Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0432, 4, "Stratford Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0433, "Camden County", "Tavistock Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0433, 4, "Tavistock Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0434, "Camden County", "Voorhees Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0434, 4, "Voorhees Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0435, "Camden County", "Waterford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0435, 4, "Waterford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0436, "Camden County", "Winslow Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0436, 4, "Winslow Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0437, "Camden County", "Woodlynne Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0437, 4, "Woodlynne Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0501, "Cape May County", "Avalon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0501, 5, "Avalon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0502, "Cape May County", "Cape May");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0502, 5, "Cape May");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0503, "Cape May County", "Cape May Point Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0503, 5, "Cape May Point Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0504, "Cape May County", "Dennis Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0504, 5, "Dennis Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0505, "Cape May County", "Lower Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0505, 5, "Lower Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0506, "Cape May County", "Middle Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0506, 5, "Middle Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0507, "Cape May County", "North Wildwood");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0507, 5, "North Wildwood");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0508, "Cape May County", "Ocean City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0508, 5, "Ocean City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0509, "Cape May County", "Sea Isle City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0509, 5, "Sea Isle City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0510, "Cape May County", "Stone Harbor Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0510, 5, "Stone Harbor Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0511, "Cape May County", "Upper Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0511, 5, "Upper Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0512, "Cape May County", "West Cape May Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0512, 5, "West Cape May Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0513, "Cape May County", "West Wildwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0513, 5, "West Wildwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0514, "Cape May County", "Wildwood");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0514, 5, "Wildwood");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0515, "Cape May County", "Wildwood Crest Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0515, 5, "Wildwood Crest Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0516, "Cape May County", "Woodbine Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0516, 5, "Woodbine Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0601, "Cumberland County", "Bridgeton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0601, 6, "Bridgeton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0602, "Cumberland County", "Commercial Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0602, 6, "Commercial Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0603, "Cumberland County", "Deerfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0603, 6, "Deerfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0604, "Cumberland County", "Downe Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0604, 6, "Downe Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0605, "Cumberland County", "Fairfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0605, 6, "Fairfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0606, "Cumberland County", "Greenwich Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0606, 6, "Greenwich Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0607, "Cumberland County", "Hopewell Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0607, 6, "Hopewell Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0608, "Cumberland County", "Lawrence Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0608, 6, "Lawrence Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0609, "Cumberland County", "Maurice River Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0609, 6, "Maurice River Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0610, "Cumberland County", "Millville");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0610, 6, "Millville");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0611, "Cumberland County", "Shiloh Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0611, 6, "Shiloh Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0612, "Cumberland County", "Stow Creek Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0612, 6, "Stow Creek Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0613, "Cumberland County", "Upper Deerfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0613, 6, "Upper Deerfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0614, "Cumberland County", "Vineland");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0614, 6, "Vineland");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0701, "Essex County", "Belleville Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0701, 7, "Belleville Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0702, "Essex County", "Bloomfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0702, 7, "Bloomfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0703, "Essex County", "Caldwell Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0703, 7, "Caldwell Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0704, "Essex County", "Cedar Grove Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0704, 7, "Cedar Grove Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0717, "Essex County", "City of Orange Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0717, 7, "City of Orange Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0705, "Essex County", "East Orange");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0705, 7, "East Orange");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0706, "Essex County", "Essex Fells Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0706, 7, "Essex Fells Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0707, "Essex County", "Fairfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0707, 7, "Fairfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0708, "Essex County", "Glen Ridge Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0708, 7, "Glen Ridge Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0709, "Essex County", "Irvington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0709, 7, "Irvington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0710, "Essex County", "Livingston Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0710, 7, "Livingston Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0711, "Essex County", "Maplewood Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0711, 7, "Maplewood Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0712, "Essex County", "Millburn Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0712, 7, "Millburn Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0713, "Essex County", "Montclair Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0713, 7, "Montclair Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0714, "Essex County", "Newark");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0714, 7, "Newark");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0715, "Essex County", "North Caldwell Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0715, 7, "North Caldwell Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0716, "Essex County", "Nutley Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0716, 7, "Nutley Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0718, "Essex County", "Roseland Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0718, 7, "Roseland Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0719, "Essex County", "South Orange Village Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0719, 7, "South Orange Village Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0720, "Essex County", "Verona Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0720, 7, "Verona Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0721, "Essex County", "West Caldwell Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0721, 7, "West Caldwell Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0722, "Essex County", "West Orange Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0722, 7, "West Orange Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0801, "Gloucester County", "Clayton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0801, 8, "Clayton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0802, "Gloucester County", "Deptford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0802, 8, "Deptford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0803, "Gloucester County", "East Greenwich Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0803, 8, "East Greenwich Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0804, "Gloucester County", "Elk Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0804, 8, "Elk Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0805, "Gloucester County", "Franklin Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0805, 8, "Franklin Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0806, "Gloucester County", "Glassboro Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0806, 8, "Glassboro Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0807, "Gloucester County", "Greenwich Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0807, 8, "Greenwich Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0808, "Gloucester County", "Harrison Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0808, 8, "Harrison Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0809, "Gloucester County", "Logan Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0809, 8, "Logan Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0810, "Gloucester County", "Mantua Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0810, 8, "Mantua Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0811, "Gloucester County", "Monroe Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0811, 8, "Monroe Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0812, "Gloucester County", "National Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0812, 8, "National Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0813, "Gloucester County", "Newfield Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0813, 8, "Newfield Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0814, "Gloucester County", "Paulsboro Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0814, 8, "Paulsboro Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0815, "Gloucester County", "Pitman Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0815, 8, "Pitman Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0816, "Gloucester County", "South Harrison Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0816, 8, "South Harrison Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0817, "Gloucester County", "Swedesboro Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0817, 8, "Swedesboro Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0818, "Gloucester County", "Washington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0818, 8, "Washington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0819, "Gloucester County", "Wenonah Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0819, 8, "Wenonah Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0820, "Gloucester County", "West Deptford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0820, 8, "West Deptford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0821, "Gloucester County", "Westville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0821, 8, "Westville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0822, "Gloucester County", "Woodbury");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0822, 8, "Woodbury");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0823, "Gloucester County", "Woodbury Heights Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0823, 8, "Woodbury Heights Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0824, "Gloucester County", "Woolwich Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0824, 8, "Woolwich Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0901, "Hudson County", "Bayonne");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0901, 9, "Bayonne");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0902, "Hudson County", "East Newark Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0902, 9, "East Newark Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0903, "Hudson County", "Guttenberg");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0903, 9, "Guttenberg");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0904, "Hudson County", "Harrison");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0904, 9, "Harrison");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0905, "Hudson County", "Hoboken");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0905, 9, "Hoboken");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0906, "Hudson County", "Jersey City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0906, 9, "Jersey City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0907, "Hudson County", "Kearny");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0907, 9, "Kearny");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0908, "Hudson County", "North Bergen Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0908, 9, "North Bergen Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0909, "Hudson County", "Secaucus");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0909, 9, "Secaucus");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0910, "Hudson County", "Union City");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0910, 9, "Union City");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0911, "Hudson County", "Weehawken Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0911, 9, "Weehawken Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (0912, "Hudson County", "West New York");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (0912, 9, "West New York");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1001, "Hunterdon County", "Alexandria Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1001, 10, "Alexandria Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1002, "Hunterdon County", "Bethlehem Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1002, 10, "Bethlehem Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1003, "Hunterdon County", "Bloomsbury Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1003, 10, "Bloomsbury Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1004, "Hunterdon County", "Califon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1004, 10, "Califon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1005, "Hunterdon County", "Clinton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1005, 10, "Clinton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1006, "Hunterdon County", "Clinton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1006, 10, "Clinton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1007, "Hunterdon County", "Delaware Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1007, 10, "Delaware Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1008, "Hunterdon County", "East Amwell Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1008, 10, "East Amwell Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1009, "Hunterdon County", "Flemington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1009, 10, "Flemington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1010, "Hunterdon County", "Franklin Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1010, 10, "Franklin Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1011, "Hunterdon County", "Frenchtown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1011, 10, "Frenchtown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1012, "Hunterdon County", "Glen Gardner Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1012, 10, "Glen Gardner Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1013, "Hunterdon County", "Hampton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1013, 10, "Hampton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1014, "Hunterdon County", "High Bridge Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1014, 10, "High Bridge Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1015, "Hunterdon County", "Holland Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1015, 10, "Holland Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1016, "Hunterdon County", "Kingwood Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1016, 10, "Kingwood Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1017, "Hunterdon County", "Lambertville");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1017, 10, "Lambertville");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1018, "Hunterdon County", "Lebanon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1018, 10, "Lebanon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1019, "Hunterdon County", "Lebanon Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1019, 10, "Lebanon Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1020, "Hunterdon County", "Milford Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1020, 10, "Milford Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1021, "Hunterdon County", "Raritan Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1021, 10, "Raritan Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1022, "Hunterdon County", "Readington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1022, 10, "Readington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1023, "Hunterdon County", "Stockton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1023, 10, "Stockton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1024, "Hunterdon County", "Tewksbury Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1024, 10, "Tewksbury Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1025, "Hunterdon County", "Union Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1025, 10, "Union Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1026, "Hunterdon County", "West Amwell Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1026, 10, "West Amwell Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1101, "Mercer County", "East Windsor Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1101, 11, "East Windsor Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1102, "Mercer County", "Ewing Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1102, 11, "Ewing Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1103, "Mercer County", "Hamilton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1103, 11, "Hamilton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1104, "Mercer County", "Hightstown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1104, 11, "Hightstown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1105, "Mercer County", "Hopewell Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1105, 11, "Hopewell Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1106, "Mercer County", "Hopewell Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1106, 11, "Hopewell Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1107, "Mercer County", "Lawrence Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1107, 11, "Lawrence Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1108, "Mercer County", "Pennington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1108, 11, "Pennington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1114, "Mercer County", "Princeton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1114, 11, "Princeton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1112, "Mercer County", "Robbinsville Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1112, 11, "Robbinsville Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1111, "Mercer County", "Trenton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1111, 11, "Trenton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1113, "Mercer County", "West Windsor Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1113, 11, "West Windsor Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1201, "Middlesex County", "Carteret Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1201, 12, "Carteret Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1202, "Middlesex County", "Cranbury Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1202, 12, "Cranbury Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1203, "Middlesex County", "Dunellen Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1203, 12, "Dunellen Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1204, "Middlesex County", "East Brunswick Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1204, 12, "East Brunswick Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1205, "Middlesex County", "Edison Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1205, 12, "Edison Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1206, "Middlesex County", "Helmetta Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1206, 12, "Helmetta Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1207, "Middlesex County", "Highland Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1207, 12, "Highland Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1208, "Middlesex County", "Jamesburg Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1208, 12, "Jamesburg Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1210, "Middlesex County", "Metuchen Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1210, 12, "Metuchen Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1211, "Middlesex County", "Middlesex Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1211, 12, "Middlesex Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1212, "Middlesex County", "Milltown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1212, 12, "Milltown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1213, "Middlesex County", "Monroe Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1213, 12, "Monroe Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1214, "Middlesex County", "New Brunswick");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1214, 12, "New Brunswick");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1215, "Middlesex County", "North Brunswick Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1215, 12, "North Brunswick Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1209, "Middlesex County", "Old Bridge Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1209, 12, "Old Bridge Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1216, "Middlesex County", "Perth Amboy");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1216, 12, "Perth Amboy");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1217, "Middlesex County", "Piscataway Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1217, 12, "Piscataway Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1218, "Middlesex County", "Plainsboro Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1218, 12, "Plainsboro Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1219, "Middlesex County", "Sayreville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1219, 12, "Sayreville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1220, "Middlesex County", "South Amboy");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1220, 12, "South Amboy");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1221, "Middlesex County", "South Brunswick Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1221, 12, "South Brunswick Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1222, "Middlesex County", "South Plainfield Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1222, 12, "South Plainfield Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1223, "Middlesex County", "South River Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1223, 12, "South River Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1224, "Middlesex County", "Spotswood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1224, 12, "Spotswood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1225, "Middlesex County", "Woodbridge Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1225, 12, "Woodbridge Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1330, "Monmouth County", "Aberdeen Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1330, 13, "Aberdeen Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1301, "Monmouth County", "Allenhurst Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1301, 13, "Allenhurst Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1302, "Monmouth County", "Allentown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1302, 13, "Allentown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1303, "Monmouth County", "Asbury Park");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1303, 13, "Asbury Park");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1304, "Monmouth County", "Atlantic Highlands Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1304, 13, "Atlantic Highlands Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1305, "Monmouth County", "Avon-by-the-Sea Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1305, 13, "Avon-by-the-Sea Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1306, "Monmouth County", "Belmar Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1306, 13, "Belmar Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1307, "Monmouth County", "Bradley Beach Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1307, 13, "Bradley Beach Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1308, "Monmouth County", "Brielle Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1308, 13, "Brielle Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1309, "Monmouth County", "Colts Neck Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1309, 13, "Colts Neck Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1310, "Monmouth County", "Deal Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1310, 13, "Deal Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1311, "Monmouth County", "Eatontown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1311, 13, "Eatontown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1312, "Monmouth County", "Englishtown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1312, 13, "Englishtown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1313, "Monmouth County", "Fair Haven Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1313, 13, "Fair Haven Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1314, "Monmouth County", "Farmingdale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1314, 13, "Farmingdale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1315, "Monmouth County", "Freehold Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1315, 13, "Freehold Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1316, "Monmouth County", "Freehold Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1316, 13, "Freehold Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1339, "Monmouth County", "Hazlet Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1339, 13, "Hazlet Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1317, "Monmouth County", "Highlands Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1317, 13, "Highlands Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1318, "Monmouth County", "Holmdel Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1318, 13, "Holmdel Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1319, "Monmouth County", "Howell Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1319, 13, "Howell Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1320, "Monmouth County", "Interlaken Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1320, 13, "Interlaken Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1321, "Monmouth County", "Keansburg Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1321, 13, "Keansburg Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1322, "Monmouth County", "Keyport Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1322, 13, "Keyport Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1347, "Monmouth County", "Lake Como Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1347, 13, "Lake Como Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1323, "Monmouth County", "Little Silver Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1323, 13, "Little Silver Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1324, "Monmouth County", "Loch Arbour Village");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1324, 13, "Loch Arbour Village");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1325, "Monmouth County", "Long Branch");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1325, 13, "Long Branch");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1326, "Monmouth County", "Manalapan Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1326, 13, "Manalapan Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1327, "Monmouth County", "Manasquan Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1327, 13, "Manasquan Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1328, "Monmouth County", "Marlboro Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1328, 13, "Marlboro Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1329, "Monmouth County", "Matawan Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1329, 13, "Matawan Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1331, "Monmouth County", "Middletown Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1331, 13, "Middletown Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1332, "Monmouth County", "Millstone Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1332, 13, "Millstone Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1333, "Monmouth County", "Monmouth Beach Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1333, 13, "Monmouth Beach Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1335, "Monmouth County", "Neptune City Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1335, 13, "Neptune City Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1334, "Monmouth County", "Neptune Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1334, 13, "Neptune Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1337, "Monmouth County", "Ocean Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1337, 13, "Ocean Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1338, "Monmouth County", "Oceanport Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1338, 13, "Oceanport Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1340, "Monmouth County", "Red Bank Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1340, 13, "Red Bank Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1341, "Monmouth County", "Roosevelt Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1341, 13, "Roosevelt Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1342, "Monmouth County", "Rumson Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1342, 13, "Rumson Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1343, "Monmouth County", "Sea Bright Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1343, 13, "Sea Bright Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1344, "Monmouth County", "Sea Girt Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1344, 13, "Sea Girt Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1345, "Monmouth County", "Shrewsbury Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1345, 13, "Shrewsbury Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1346, "Monmouth County", "Shrewsbury Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1346, 13, "Shrewsbury Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1348, "Monmouth County", "Spring Lake Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1348, 13, "Spring Lake Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1349, "Monmouth County", "Spring Lake Heights Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1349, 13, "Spring Lake Heights Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1336, "Monmouth County", "Tinton Falls Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1336, 13, "Tinton Falls Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1350, "Monmouth County", "Union Beach Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1350, 13, "Union Beach Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1351, "Monmouth County", "Upper Freehold Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1351, 13, "Upper Freehold Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1352, "Monmouth County", "Wall Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1352, 13, "Wall Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1353, "Monmouth County", "West Long Branch Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1353, 13, "West Long Branch Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1401, "Morris County", "Boonton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1401, 14, "Boonton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1402, "Morris County", "Boonton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1402, 14, "Boonton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1403, "Morris County", "Butler Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1403, 14, "Butler Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1404, "Morris County", "Chatham Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1404, 14, "Chatham Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1405, "Morris County", "Chatham Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1405, 14, "Chatham Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1406, "Morris County", "Chester Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1406, 14, "Chester Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1407, "Morris County", "Chester Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1407, 14, "Chester Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1408, "Morris County", "Denville Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1408, 14, "Denville Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1409, "Morris County", "Dover");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1409, 14, "Dover");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1410, "Morris County", "East Hanover Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1410, 14, "East Hanover Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1411, "Morris County", "Florham Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1411, 14, "Florham Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1412, "Morris County", "Hanover Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1412, 14, "Hanover Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1413, "Morris County", "Harding Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1413, 14, "Harding Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1414, "Morris County", "Jefferson Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1414, 14, "Jefferson Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1415, "Morris County", "Kinnelon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1415, 14, "Kinnelon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1416, "Morris County", "Lincoln Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1416, 14, "Lincoln Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1430, "Morris County", "Long Hill Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1430, 14, "Long Hill Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1417, "Morris County", "Madison Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1417, 14, "Madison Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1418, "Morris County", "Mendham Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1418, 14, "Mendham Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1419, "Morris County", "Mendham Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1419, 14, "Mendham Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1420, "Morris County", "Mine Hill Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1420, 14, "Mine Hill Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1421, "Morris County", "Montville Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1421, 14, "Montville Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1423, "Morris County", "Morris Plains Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1423, 14, "Morris Plains Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1422, "Morris County", "Morris Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1422, 14, "Morris Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1424, "Morris County", "Morristown");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1424, 14, "Morristown");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1426, "Morris County", "Mount Arlington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1426, 14, "Mount Arlington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1427, "Morris County", "Mount Olive Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1427, 14, "Mount Olive Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1425, "Morris County", "Mountain Lakes Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1425, 14, "Mountain Lakes Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1428, "Morris County", "Netcong Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1428, 14, "Netcong Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1429, "Morris County", "Parsippany-Troy Hills Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1429, 14, "Parsippany-Troy Hills Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1431, "Morris County", "Pequannock Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1431, 14, "Pequannock Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1432, "Morris County", "Randolph Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1432, 14, "Randolph Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1433, "Morris County", "Riverdale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1433, 14, "Riverdale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1434, "Morris County", "Rockaway Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1434, 14, "Rockaway Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1435, "Morris County", "Rockaway Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1435, 14, "Rockaway Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1436, "Morris County", "Roxbury Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1436, 14, "Roxbury Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1437, "Morris County", "Victory Gardens Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1437, 14, "Victory Gardens Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1438, "Morris County", "Washington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1438, 14, "Washington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1439, "Morris County", "Wharton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1439, 14, "Wharton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1501, "Ocean County", "Barnegat Light Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1501, 15, "Barnegat Light Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1533, "Ocean County", "Barnegat Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1533, 15, "Barnegat Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1502, "Ocean County", "Bay Head Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1502, 15, "Bay Head Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1503, "Ocean County", "Beach Haven Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1503, 15, "Beach Haven Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1504, "Ocean County", "Beachwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1504, 15, "Beachwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1505, "Ocean County", "Berkeley Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1505, 15, "Berkeley Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1506, "Ocean County", "Brick Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1506, 15, "Brick Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1508, "Ocean County", "Eagleswood Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1508, 15, "Eagleswood Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1509, "Ocean County", "Harvey Cedars Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1509, 15, "Harvey Cedars Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1510, "Ocean County", "Island Heights Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1510, 15, "Island Heights Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1511, "Ocean County", "Jackson Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1511, 15, "Jackson Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1512, "Ocean County", "Lacey Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1512, 15, "Lacey Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1513, "Ocean County", "Lakehurst Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1513, 15, "Lakehurst Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1514, "Ocean County", "Lakewood Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1514, 15, "Lakewood Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1515, "Ocean County", "Lavallette Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1515, 15, "Lavallette Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1516, "Ocean County", "Little Egg Harbor Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1516, 15, "Little Egg Harbor Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1517, "Ocean County", "Long Beach Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1517, 15, "Long Beach Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1518, "Ocean County", "Manchester Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1518, 15, "Manchester Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1519, "Ocean County", "Mantoloking Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1519, 15, "Mantoloking Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1521, "Ocean County", "Ocean Gate Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1521, 15, "Ocean Gate Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1520, "Ocean County", "Ocean Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1520, 15, "Ocean Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1522, "Ocean County", "Pine Beach Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1522, 15, "Pine Beach Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1523, "Ocean County", "Plumsted Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1523, 15, "Plumsted Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1525, "Ocean County", "Point Pleasant Beach Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1525, 15, "Point Pleasant Beach Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1524, "Ocean County", "Point Pleasant Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1524, 15, "Point Pleasant Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1526, "Ocean County", "Seaside Heights Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1526, 15, "Seaside Heights Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1527, "Ocean County", "Seaside Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1527, 15, "Seaside Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1528, "Ocean County", "Ship Bottom Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1528, 15, "Ship Bottom Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1529, "Ocean County", "South Toms River Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1529, 15, "South Toms River Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1530, "Ocean County", "Stafford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1530, 15, "Stafford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1531, "Ocean County", "Surf City Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1531, 15, "Surf City Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1507, "Ocean County", "Toms River Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1507, 15, "Toms River Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1532, "Ocean County", "Tuckerton Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1532, 15, "Tuckerton Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1601, "Passaic County", "Bloomingdale Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1601, 16, "Bloomingdale Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1602, "Passaic County", "Clifton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1602, 16, "Clifton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1603, "Passaic County", "Haledon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1603, 16, "Haledon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1604, "Passaic County", "Hawthorne Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1604, 16, "Hawthorne Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1605, "Passaic County", "Little Falls Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1605, 16, "Little Falls Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1606, "Passaic County", "North Haledon Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1606, 16, "North Haledon Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1607, "Passaic County", "Passaic");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1607, 16, "Passaic");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1608, "Passaic County", "Paterson");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1608, 16, "Paterson");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1609, "Passaic County", "Pompton Lakes Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1609, 16, "Pompton Lakes Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1610, "Passaic County", "Prospect Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1610, 16, "Prospect Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1611, "Passaic County", "Ringwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1611, 16, "Ringwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1612, "Passaic County", "Totowa Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1612, 16, "Totowa Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1613, "Passaic County", "Wanaque Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1613, 16, "Wanaque Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1614, "Passaic County", "Wayne Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1614, 16, "Wayne Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1615, "Passaic County", "West Milford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1615, 16, "West Milford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1616, "Passaic County", "Woodland Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1616, 16, "Woodland Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1701, "Salem County", "Alloway Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1701, 17, "Alloway Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1713, "Salem County", "Carneys Point Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1713, 17, "Carneys Point Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1702, "Salem County", "Elmer Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1702, 17, "Elmer Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1703, "Salem County", "Elsinboro Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1703, 17, "Elsinboro Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1704, "Salem County", "Lower Alloways Creek Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1704, 17, "Lower Alloways Creek Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1705, "Salem County", "Mannington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1705, 17, "Mannington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1706, "Salem County", "Oldmans Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1706, 17, "Oldmans Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1707, "Salem County", "Penns Grove Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1707, 17, "Penns Grove Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1708, "Salem County", "Pennsville Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1708, 17, "Pennsville Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1908, "Sussex County", "Green Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1908, 19, "Green Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1709, "Salem County", "Pilesgrove Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1709, 17, "Pilesgrove Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1710, "Salem County", "Pittsgrove Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1710, 17, "Pittsgrove Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1711, "Salem County", "Quinton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1711, 17, "Quinton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1712, "Salem County", "Salem");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1712, 17, "Salem");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1714, "Salem County", "Upper Pittsgrove Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1714, 17, "Upper Pittsgrove Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1715, "Salem County", "Woodstown Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1715, 17, "Woodstown Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1801, "Somerset County", "Bedminster Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1801, 18, "Bedminster Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1802, "Somerset County", "Bernards Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1802, 18, "Bernards Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1803, "Somerset County", "Bernardsville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1803, 18, "Bernardsville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1804, "Somerset County", "Bound Brook Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1804, 18, "Bound Brook Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1805, "Somerset County", "Branchburg Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1805, 18, "Branchburg Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1806, "Somerset County", "Bridgewater Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1806, 18, "Bridgewater Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1807, "Somerset County", "Far Hills Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1807, 18, "Far Hills Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1808, "Somerset County", "Franklin Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1808, 18, "Franklin Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1809, "Somerset County", "Green Brook Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1809, 18, "Green Brook Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1810, "Somerset County", "Hillsborough Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1810, 18, "Hillsborough Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1811, "Somerset County", "Manville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1811, 18, "Manville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1812, "Somerset County", "Millstone Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1812, 18, "Millstone Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1813, "Somerset County", "Montgomery Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1813, 18, "Montgomery Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1814, "Somerset County", "North Plainfield Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1814, 18, "North Plainfield Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1815, "Somerset County", "Peapack-Gladstone Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1815, 18, "Peapack-Gladstone Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1816, "Somerset County", "Raritan Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1816, 18, "Raritan Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1817, "Somerset County", "Rocky Hill Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1817, 18, "Rocky Hill Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1818, "Somerset County", "Somerville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1818, 18, "Somerville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1819, "Somerset County", "South Bound Brook Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1819, 18, "South Bound Brook Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1820, "Somerset County", "Warren Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1820, 18, "Warren Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1821, "Somerset County", "Watchung Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1821, 18, "Watchung Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1901, "Sussex County", "Andover Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1901, 19, "Andover Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1902, "Sussex County", "Andover Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1902, 19, "Andover Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1903, "Sussex County", "Branchville Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1903, 19, "Branchville Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1904, "Sussex County", "Byram Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1904, 19, "Byram Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1905, "Sussex County", "Frankford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1905, 19, "Frankford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1906, "Sussex County", "Franklin Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1906, 19, "Franklin Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1909, "Sussex County", "Hamburg Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1909, 19, "Hamburg Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1910, "Sussex County", "Hampton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1910, 19, "Hampton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1911, "Sussex County", "Hardyston Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1911, 19, "Hardyston Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1912, "Sussex County", "Hopatcong Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1912, 19, "Hopatcong Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1913, "Sussex County", "Lafayette Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1913, 19, "Lafayette Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1914, "Sussex County", "Montague Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1914, 19, "Montague Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1915, "Sussex County", "Newton");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1915, 19, "Newton");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1916, "Sussex County", "Ogdensburg Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1916, 19, "Ogdensburg Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1917, "Sussex County", "Sandyston Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1917, 19, "Sandyston Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1918, "Sussex County", "Sparta Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1918, 19, "Sparta Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1919, "Sussex County", "Stanhope Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1919, 19, "Stanhope Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1920, "Sussex County", "Stillwater Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1920, 19, "Stillwater Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1921, "Sussex County", "Sussex Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1921, 19, "Sussex Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1922, "Sussex County", "Vernon Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1922, 19, "Vernon Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1923, "Sussex County", "Walpack Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1923, 19, "Walpack Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (1924, "Sussex County", "Wantage Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (1924, 19, "Wantage Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2001, "Union County", "Berkeley Heights Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2001, 20, "Berkeley Heights Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2002, "Union County", "Clark Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2002, 20, "Clark Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2003, "Union County", "Cranford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2003, 20, "Cranford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2004, "Union County", "Elizabeth");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2004, 20, "Elizabeth");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2005, "Union County", "Fanwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2005, 20, "Fanwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2006, "Union County", "Garwood Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2006, 20, "Garwood Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2007, "Union County", "Hillside Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2007, 20, "Hillside Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2008, "Union County", "Kenilworth Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2008, 20, "Kenilworth Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2009, "Union County", "Linden");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2009, 20, "Linden");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2010, "Union County", "Mountainside Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2010, 20, "Mountainside Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2011, "Union County", "New Providence Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2011, 20, "New Providence Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2012, "Union County", "Plainfield");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2012, 20, "Plainfield");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2013, "Union County", "Rahway");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2013, 20, "Rahway");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2014, "Union County", "Roselle Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2014, 20, "Roselle Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2015, "Union County", "Roselle Park Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2015, 20, "Roselle Park Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2016, "Union County", "Scotch Plains Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2016, 20, "Scotch Plains Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2017, "Union County", "Springfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2017, 20, "Springfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2018, "Union County", "Summit");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2018, 20, "Summit");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2019, "Union County", "Union Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2019, 20, "Union Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2020, "Union County", "Westfield");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2020, 20, "Westfield");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2021, "Union County", "Winfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2021, 20, "Winfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2101, "Warren County", "Allamuchy Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2101, 21, "Allamuchy Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2102, "Warren County", "Alpha Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2102, 21, "Alpha Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2103, "Warren County", "Belvidere");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2103, 21, "Belvidere");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2104, "Warren County", "Blairstown Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2104, 21, "Blairstown Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2105, "Warren County", "Franklin Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2105, 21, "Franklin Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2106, "Warren County", "Frelinghuysen Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2106, 21, "Frelinghuysen Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2107, "Warren County", "Greenwich Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2107, 21, "Greenwich Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2108, "Warren County", "Hackettstown");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2108, 21, "Hackettstown");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2109, "Warren County", "Hardwick Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2109, 21, "Hardwick Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2110, "Warren County", "Harmony Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2110, 21, "Harmony Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2111, "Warren County", "Hope Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2111, 21, "Hope Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2112, "Warren County", "Independence Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2112, 21, "Independence Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2113, "Warren County", "Knowlton Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2113, 21, "Knowlton Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2114, "Warren County", "Liberty Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2114, 21, "Liberty Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2115, "Warren County", "Lopatcong Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2115, 21, "Lopatcong Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2116, "Warren County", "Mansfield Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2116, 21, "Mansfield Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2117, "Warren County", "Oxford Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2117, 21, "Oxford Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2119, "Warren County", "Phillipsburg");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2119, 21, "Phillipsburg");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2120, "Warren County", "Pohatcong Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2120, 21, "Pohatcong Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2121, "Warren County", "Washington Borough");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2121, 21, "Washington Borough");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2122, "Warren County", "Washington Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2122, 21, "Washington Township");
 
-INSERT INTO nj_municipalities (municipality_code, county_name, municipality_name)
-VALUES (2123, "Warren County", "White Township");
+INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
+VALUES (2123, 21, "White Township");
