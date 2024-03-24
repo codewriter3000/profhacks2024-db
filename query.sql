@@ -1699,3 +1699,7 @@ VALUES (2122, 21, "Washington Township");
 
 INSERT INTO nj_municipalities (municipality_code, county_code, municipality_name)
 VALUES (2123, 21, "White Township");
+
+UPDATE nj_counties
+SET county_name = REPLACE(county_name, ' County', '')
+WHERE county_name LIKE '% County';
